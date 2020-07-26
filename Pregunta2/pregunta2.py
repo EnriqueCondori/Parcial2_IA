@@ -50,11 +50,6 @@ modelo.fit(X_train, Y_train)
 print("......... ----PREDICCION----..............")
 print(modelo.predict(X_test))
 print("....................................")
-
-#_-------------------------------------
-model = make_pipeline(StandardScaler(),LogisticRegression())
-model.fit(X_train, Y_train)
-print("Presicion del modelo: %f" % model.score(X_test, Y_test))
-# print(model.predict_proba(X_test))
+print("Presicion del modelo: %f" % modelo.score(X_test, Y_test))
 
 
